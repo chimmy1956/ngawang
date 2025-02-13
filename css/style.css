@@ -219,4 +219,5 @@ body{
 
 .monthsary {
     font-size: 26px;
+    text-transform: uppercase;
 }
