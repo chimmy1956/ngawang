@@ -217,7 +217,7 @@ body{
     font-size: 30px;
   }
 
-.monthsary {
+.monthsary p{
     font-size: 26px;
     text-transform: uppercase;
 }
