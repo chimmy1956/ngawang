@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Special Gift</title>
+</head>
+<body>
+    <h4 id="typewriter" class="date-feb"></h4>
+
+<script>
+  const text = "14 February 2025";
+  let i = 0;
+  let isDeleting = false;
+
+  function typeWriter() {
+    const display = document.getElementById("typewriter");
+
+    if (!isDeleting && i <= text.length) {
+      display.innerHTML = text.substring(0, i++);
+    } else if (isDeleting && i >= 0) {
+      display.innerHTML = text.substring(0, i--);
+    }
+
+    if (i === text.length) {
+      isDeleting = true;
+      setTimeout(typeWriter, 1000); // Pause before deleting
+    } else if (i === 0 && isDeleting) {
+      isDeleting = false;
+      setTimeout(typeWriter, 500); // Pause before typing again
+    } else {
+      setTimeout(typeWriter, 100); // Typing speed
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
+
+
+    <div class="greetings">
+        
+        <span>"</span>
+        <span>H</span>
+        <span>A</span>
+        <span>P</span>
+        <span>P</span>
+        <span>Y</span>
+        <span>_</span>
+        <span>V</span>
+        <span>A</span>
+        <span>L</span>
+        <span>E</span>
+        <span>N</span>
+        <span>T</span>
+        <span>I</span>
+        <span>N</span>
+        <span>E</span>
+        <span>'</span>
+        <span>S</span>
+        <span>_</span>
+        <span>D</span>
+        <span>A</span>
+        <span>Y</span>
+        <span>_</span>
+        <span>B</span>
+        <span>A</span>
+        <span>B</span>
+        <span>E</span>
+        <span>S</span>
+        <span>" </span>
+    </div>
+    <div class="description">
+        <span>Click the button to see my virtual gift </span>
+    </div>
+    <!-- <div class="button">
+        <button>
+            <a href="flower.html">Click ME</a>
+        </button>
+        
+    </div> -->
+    <!-- From Uiverse.io by vinodjangid07 --> 
+    <a href="flower.html" target="_blank">
+        <button class="bookmarkBtn">
+          <span class="IconContainer">
+            <svg viewBox="0 0 512 512" height="0.9em" class="icon">
+              <path
+                d="M462.3 62.7c-54.5-46.4-136-38.9-186.4 13.7L256 96 236.1 76.4c-50.4-52.6-131.9-60.1-186.4-13.7-62 52.8-66.4 149.8-10.2 207.5L239 470.6c7.5 7.9 19.8 7.9 27.3 0l199.6-200.4c56.2-57.7 51.8-154.7-10.2-207.5z"
+              ></path>
+            </svg>
+          </span>
+          <p class="text">CLICK</p>
+        </button>
+      </a>
+  
+    
+</body>
+</html>
